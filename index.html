@@ -1,9 +1,32 @@
 <html>
   <head>
     <title>Test</title>
-    <link rel="stylesheet" href="style/ice-queen.css">
+    <link rel="stylesheet" title="onion-salad" href="style/onion-salad.css">
+    <link rel="alternate stylesheet" title="burnt-toast" href="style/burnt-toast.css">
+    <link rel="alternate stylesheet" title="lemon-bitters" href="style/lemon-bitters.css">
+    <link rel="alternate stylesheet" title="ice-queen" href="style/ice-queen.css">
+    <script>
+      function switch_style( name ) {
+        let i = null, tags = document.getElementsByTagName("link");
+        for ( i = 0; i < tags.length; i++ ) {
+          if ( tags[i].rel.indexOf("stylesheet") != -1 && tags[i].title ) {
+            tags[i].disabled = ( tags[i].title != name );
+          }
+        }
+        return false;
+      }
+    </script>
   </head>
   <body>
+    <form>
+    <fieldset>
+      <legend>Theme</legend>
+      <button onclick="switch_style('onion-salad')">Onion Salad</button>
+      <button onclick="switch_style('burnt-toast')">Burnt Toast</button>
+      <button onclick="switch_style('lemon-bitters')">Lemon Bitters</button>
+      <button onclick="switch_style('ice-queen')">Ice Queen</button>
+    </fieldset>
+    </form>
 <h1>Heading 1<small>Subheading</small></h1>
 <h2>Heading 2<small>Subheading</small></h2>
 <h3>Heading 3<small>Subheading</small></h3>
