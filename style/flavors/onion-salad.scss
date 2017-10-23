@@ -400,13 +400,13 @@ $card-size3-width:             100%;               // Width for fluid cards
 $card-style1-name:            'warning';           // Class name for card style 1
 $card-style1-back-color:      adjust-hue($google-primary-dark,-20%);             // Background color for card style 1
 $card-style1-fore-color:      $back-color;         // Text color for card style 1
-$card-style1-border-style:    $_1px solid #d1c661; // Border style for card style 1
+$card-style1-border-style:    $_1px solid adjust-hue($google-primary,-20%); // Border style for card style 1
 $card-style1-border-radius:   0;                   // Border radius for card style 1
 $card-style1-section-border-style:$_1px solid #d1c661;// Border style for card style 1 sections
 $card-style2-name:            'error';             // Class name for card style 2
 $card-style2-back-color:      adjust-hue($google-primary-dark,-80%);             // Background color for card style 2
 $card-style2-fore-color:      #fafafa;             // Text color for card style 2
-$card-style2-border-style:    $_1px solid #a71a1a; // Border style for card style 2
+$card-style2-border-style:    $_1px solid adjust-hue($google-primary,-80%); // Border style for card style 2
 $card-style2-border-radius:   0;                   // Border radius for card style 2
 $card-style2-section-border-style:$_1px solid #a71a1a;// Border style for card style 2 sections
 $card-section-style1-name:        'dark';          // Class name for card section style 1

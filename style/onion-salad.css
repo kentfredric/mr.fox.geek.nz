@@ -1394,7 +1394,7 @@ table.striped tr:nth-of-type(2n) > td {
 .card.warning {
   background: #72830d;
   color: #233d06;
-  border: 0.0625rem solid #d1c661; }
+  border: 0.0625rem solid #a2b342; }
   .card.warning > .section {
     border-bottom: 0.0625rem solid #d1c661; }
   .card.warning > .section:last-child {
@@ -1403,7 +1403,7 @@ table.striped tr:nth-of-type(2n) > td {
 .card.error {
   background: #831e0d;
   color: #fafafa;
-  border: 0.0625rem solid #a71a1a; }
+  border: 0.0625rem solid #b35342; }
   .card.error > .section {
     border-bottom: 0.0625rem solid #a71a1a; }
   .card.error > .section:last-child {
