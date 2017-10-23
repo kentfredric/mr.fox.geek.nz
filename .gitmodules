@@ -1,0 +1,3 @@
+[submodule "style/mini.css"]
+	path = style/mini.css
+	url = https://github.com/Chalarangelo/mini.css.git
