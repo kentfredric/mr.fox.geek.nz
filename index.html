@@ -6,7 +6,8 @@
     <link rel="alternate stylesheet" title="lemon-bitters" href="style/lemon-bitters.css">
     <link rel="alternate stylesheet" title="ice-queen" href="style/ice-queen.css">
     <script>
-      function switch_style( name ) {
+      function switch_style( name, e ) {
+        e.preventDefault();
         let i = null, tags = document.getElementsByTagName("link");
         for ( i = 0; i < tags.length; i++ ) {
           if ( tags[i].rel.indexOf("stylesheet") != -1 && tags[i].title ) {
@@ -21,10 +22,10 @@
     <form>
     <fieldset>
         <legend>Theme</legend>
-        <button onclick="switch_style('onion-salad'); false">Onion Salad</button>
-        <button onclick="switch_style('burnt-toast'); false">Burnt Toast</button>
-        <button onclick="switch_style('lemon-bitters'); false">Lemon Bitters</button>
-        <button onclick="switch_style('ice-queen'); false">Ice Queen</button>
+        <button onclick="switch_style('onion-salad',event);">Onion Salad</button>
+        <button onclick="switch_style('burnt-toast',event);">Burnt Toast</button>
+        <button onclick="switch_style('lemon-bitters',event);">Lemon Bitters</button>
+        <button onclick="switch_style('ice-queen',event);">Ice Queen</button>
       </fieldset>
     </form>
 <h1>Heading 1<small>Subheading</small></h1>
